@@ -1,0 +1,40 @@
+[package]
+name = "rs-zip2meta2rbat"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "forbid"
+cognitive_complexity = "forbid"
+
+[dependencies.arrow]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.chrono]
+version = "0"
+default-features = false
+features = [
+]
+
+[dependencies.zip]
+version = "4"
+optional = true
+default-features = false
+features = [
+	"chrono",
+	"deflate",
+]
+
+[features]
+default = [
+	"szip",
+]
+
+szip = ["zip"]
