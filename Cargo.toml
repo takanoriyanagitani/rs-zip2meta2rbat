@@ -3,6 +3,13 @@ name = "rs-zip2meta2rbat"
 version = "0.1.0"
 edition = "2024"
 
+description = "Transforms the metadata values of a zip to a record batch."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-zip2meta2rbat"
+homepage = "https://github.com/takanoriyanagitani/rs-zip2meta2rbat"
+documentation = "https://docs.rs/rs-zip2meta2rbat/latest"
+keywords = ["zip", "metadata", "record-batch", "arrow", "sync"]
+
 [lints.rust]
 unsafe_code = "forbid"
 
